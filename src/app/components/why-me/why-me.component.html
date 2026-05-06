@@ -1,0 +1,80 @@
+<section class="why-section section-pad" id="about">
+  <div class="why-inner">
+    <!-- Left: Visual Panel -->
+    <div class="why-visual reveal" animateOnScroll>
+      <div class="visual-bg">
+        <div class="vb-pattern"></div>
+      </div>
+      <div class="visual-card">
+        <div class="vc-accent-line"></div>
+        <span class="label-text">Por Que Funciona</span>
+        <blockquote class="vc-quote display-heading">
+          "Foco total em comunicação real, não em perfeição."
+        </blockquote>
+        <div class="vc-divider"></div>
+        <div class="vc-credentials">
+          <div class="cred-item">
+            <span class="cred-num">10+</span>
+            <span class="cred-label">Anos Ensinando</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-num">500+</span>
+            <span class="cred-label">Alunos ensinados</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-num">A1–C2</span>
+            <span class="cred-label">Níveis Atendidos</span>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative offset frame -->
+      <div class="visual-dot-accent"></div>
+    </div>
+
+    <!-- Right: Content -->
+    <div class="why-content">
+      <div class="reveal" animateOnScroll>
+        <span class="label-text">Sobre o Método</span>
+        <h2 class="display-heading why-heading">
+          Ensinando inglês do jeito<br />que o seu cérebro<br /><em>realmente</em> aprende.
+        </h2>
+      </div>
+
+      <p class="body-text why-intro reveal reveal-delay-2" animateOnScroll>
+        A maioria dos cursos te faz sentir que sei inglês nunca é suficiente. Eu te mostro que você
+        consegue trabalhar com o conhecimento que já tem, sendo FUNCIONAL e REAL.
+      </p>
+
+      <ul class="why-list">
+        @for (point of points; track point.title; let i = $index) {
+          <li [class]="'why-item reveal reveal-delay-' + (i + 2)" animateOnScroll>
+            <div class="item-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="item-content">
+              <h4 class="item-title">{{ point.title }}</h4>
+              <p class="item-desc body-text">{{ point.desc }}</p>
+            </div>
+          </li>
+        }
+      </ul>
+
+      <div class="reveal reveal-delay-5" animateOnScroll>
+        <a href="#contact" class="btn-primary why-cta">
+          Comece sua Jornada
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

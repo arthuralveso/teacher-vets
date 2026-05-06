@@ -1,0 +1,73 @@
+<nav [class.scrolled]="isScrolled()" [class.menu-open]="isMenuOpen()" class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <img
+        src="assets/tvets-logo-2.png"
+        alt="Teacher Vets — Professor de Inglês"
+        class="logo-image"
+      />
+    </a>
+
+    <div class="nav-links" [class.open]="isMenuOpen()">
+      <a href="#services" (click)="closeMenu()">Serviços</a>
+      <a href="#about" (click)="closeMenu()">Sobre</a>
+      <a href="#testimonials" (click)="closeMenu()">Depoimentos</a>
+      <a href="#contact" (click)="closeMenu()">Contato</a>
+      <a href="#contact" class="btn-primary nav-cta-mobile" (click)="closeMenu()"
+        >aula experimental</a
+      >
+    </div>
+
+    <div class="nav-right">
+      <button
+        class="theme-toggle"
+        (click)="toggleTheme()"
+        [attr.aria-label]="isDark() ? 'Mudar para modo claro' : 'Mudar para modo escuro'"
+      >
+        @if (isDark()) {
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+            />
+          </svg>
+        } @else {
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        }
+      </button>
+
+      <a href="#contact" class="btn-primary nav-cta">aula experimental</a>
+    </div>
+
+    <button
+      class="menu-toggle"
+      (click)="toggleMenu()"
+      [class.active]="isMenuOpen()"
+      aria-label="Abrir menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>

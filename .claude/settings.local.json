@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(sed -i 's/background: #fff;$/background: var\\(--card-bg\\);/g; *)",
+      "Bash(sed -i 's/background: radial-gradient\\(circle, rgba\\(192,48,61,0\\\\.12\\) 0%, transparent 70%\\)/background: radial-gradient\\(circle, var\\(--c-cta-blob\\) 0%, transparent 70%\\)/g' C:/Users/Arthur/teacher-vets/src/app/components/cta-section/cta-section.component.ts)",
+      "Bash(npx create-next-app@latest teacher-vets-next --typescript --eslint --tailwind --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)",
+      "Bash(npx tsc *)",
+      "PowerShell(Set-Location *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\nodejs\\\\npx.cmd\" tsc --noEmit --project \"C:\\\\Users\\\\Arthur\\\\teacher-vets-next\\\\tsconfig.json\" 2>&1 | Select-Object -First 80)",
+      "PowerShell(& \"C:\\\\Program Files\\\\nodejs\\\\npx.cmd\" --prefix \"C:\\\\Users\\\\Arthur\\\\teacher-vets-next\" next build 2>&1 | Select-Object -First 80)"
+    ]
+  }
+}
