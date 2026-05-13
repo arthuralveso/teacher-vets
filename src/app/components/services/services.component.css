@@ -81,32 +81,6 @@
   transform: scaleX(1);
 }
 
-.card-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.card-icon {
-  width: 48px;
-  height: 48px;
-  background: var(--ivory-mid);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink-mid);
-}
-.card-tag {
-  font-size: 0.6rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--amber);
-  padding: 0.28rem 0.6rem;
-  border: 1px solid var(--c-tag-border);
-  background: var(--amber-light);
-  border-radius: 6px;
-}
 
 .card-title {
   font-size: 1.5rem;

@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
+import { PlanBadgeComponent } from '../plan-badge/plan-badge.component';
 
 interface Service {
   id: string;
@@ -15,7 +16,7 @@ interface Service {
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [AnimateOnScrollDirective],
+  imports: [AnimateOnScrollDirective, PlanBadgeComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
 })

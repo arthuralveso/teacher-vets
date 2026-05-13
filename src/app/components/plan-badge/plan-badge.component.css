@@ -1,0 +1,44 @@
+.plan-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.3rem 0.65rem 0.3rem 0.4rem;
+  background: var(--ivory-mid);
+  border: 1px solid var(--border-mid);
+  border-radius: 999px;
+}
+
+.badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-light);
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.badge-icon ::ng-deep svg {
+  width: 16px;
+  height: 16px;
+}
+
+.badge-label {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  line-height: 1;
+}
+
+:host-context([data-theme='dark']) .plan-badge {
+  background: var(--sage-faint);
+  border-color: var(--sage-light);
+}
+
+:host-context([data-theme='dark']) .badge-icon,
+:host-context([data-theme='dark']) .badge-label {
+  color: var(--sage);
+}

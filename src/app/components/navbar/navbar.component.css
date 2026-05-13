@@ -185,24 +185,33 @@
   }
   .menu-toggle {
     display: flex;
+    position: relative;
+    z-index: 200;
   }
   .nav-links {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--ivory);
+    width: 100vw;
+    height: 100dvh;
+    background-color: var(--ivory);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
     transform: translateX(100%);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: -1;
+    visibility: hidden;
+    transition:
+      transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0s 0.4s;
+    z-index: 99;
   }
   .nav-links.open {
     transform: translateX(0);
+    visibility: visible;
+    transition:
+      transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0s 0s;
   }
   .nav-links a {
     font-size: 1rem;
