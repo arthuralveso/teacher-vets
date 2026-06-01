@@ -61,7 +61,7 @@ export class ServicesComponent {
       title: 'Simulação de Entrevistas',
       description:
         'Simulações reais com feedback direto — comportamental, técnica e por competências. Entre preparado, saia confiante.',
-      price: 'R$ 250,00',
+      price: 'R$ 200,00',
       priceLabel: 'hora',
     },
     {
